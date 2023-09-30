@@ -14,6 +14,27 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+.site-header h1 {
+  font-size: 4em;
+}
+
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+.skip-links a:focus {
+  top: 0;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -53,6 +74,18 @@ img {
   font-size: 1.25rem;
 }
 
+.main-nav ul li a:hover {
+  background-color: rgb(35, 90, 158);
+  color: white;
+  font-weight: 800;
+}
+
+.main-nav ul li a:focus {
+  background-color: rgb(35, 90, 158);
+  color: white;
+  font-weight: 800;
+}
+
 form input,
 form textarea {
   display: block;
@@ -69,16 +102,41 @@ form textarea {
 }
 
 form button {
-  background: none;
-  border: 2px solid black;
+  background: rgb(237, 180, 110);
+  border: 3px solid rgb(229, 135, 21);
   padding: 1rem;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: rgb(229, 135, 21);
+  border: 3px solid rgb(237, 180, 110);
+}
+
+form button:focus {
+  background: rgb(229, 135, 21);
+  border: 3px solid rgb(237, 180, 110);
 }
 
 .main-content a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.main-content a:hover {
+  background-color: rgb(229, 135, 21);
+  color: white;
+}
+
+.main-content a:focus {
+  background-color: rgb(229, 135, 21);
+  color: white;
 }
 
 .site-footer {

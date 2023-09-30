@@ -15,9 +15,14 @@
 
 <body>
   <div class="container">
+    <!-- skip links -->
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main nav</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <div class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav" role="navigation">
+      <div class="main-nav" id="nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -27,7 +32,9 @@
       </div>
       <img src="https://placekitten.com/1200/900" alt="picture of a cute kitten">
     </div>
-    <div class="main-content" role="main">
+    <!-- aria role -->
+    <div class="main-content" id="main" role="main"> 
+      <!-- aria role -->
       <span role="contentinfo">
         <h1>Welcome to Jam Box</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
@@ -42,6 +49,7 @@
           <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h1>Address</h1>
+        <!-- schema info -->
         <p itemscope itemtype="https://schema.org/PostalAddress">
           Jambox Studios
           <span itemprop="streetAddress">123 Guitar Road</span>,
@@ -52,6 +60,7 @@
       </div>
       <div class="contact-section">
         <h1>Contact Us</h1>
+        <!-- aria role -->
         <form action="thanks.html" role="form">         
           <label for="name">Full Name</label> 
           <input type="text" id="name" placeholder="John Doe">          
@@ -66,7 +75,7 @@
         </form>
       </div>
       <br>
-      <a href="#"><h3>Back to Top</h3></a>
+      <a href="#nav">Back to Top</a>
     </div>
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
