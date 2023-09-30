@@ -22,14 +22,14 @@
     </ul>
     <div class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav" id="nav" role="navigation">
+      <nav class="main-nav" id="nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
+      </nav>
       <img src="https://placekitten.com/1200/900" alt="picture of a cute kitten">
     </div>
     <!-- aria role -->
@@ -52,6 +52,7 @@
         <!-- schema info -->
         <p itemscope itemtype="https://schema.org/PostalAddress">
           Jambox Studios
+          <br>
           <span itemprop="streetAddress">123 Guitar Road</span>,
           <span itemprop="addressLocality">Musicville</span>, 
           <span itemprop="addressCountry">Danceistan</span>
@@ -70,8 +71,8 @@
           <input type="text" id="subject" placeholder="Subject Line">         
           <label for="complaint">Your Message</label>
           <textarea type="text" id="complaint" placeholder="What do you want to talk about?"></textarea>
-          
-          <button type="submit">Send</button>
+          <!-- aria role -->
+          <button type="submit" role="button">Send</button>
         </form>
       </div>
       <br>
